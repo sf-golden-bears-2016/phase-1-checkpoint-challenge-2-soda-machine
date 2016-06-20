@@ -7,12 +7,22 @@ class SodaMachine
   end
 
   def current_inventory_count
+    @sodas.length
   end
 
   def find_soda(soda_brand)
+    @sodas.each do |soda, value|
+      if soda_branch.include?(soda)
+        soda_branch
+      end
+    end 
   end
 
   def sell(soda_brand)
   end
 
 end
+
+Sodamachine = SodaMachine.new(
+
+p sodamachine
