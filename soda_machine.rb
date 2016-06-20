@@ -20,7 +20,7 @@ class SodaMachine
   end
 
   def sell(soda_brand)
-    soda_sold = nil
+    sold = nil
     @sodas.each do |soda|
       if soda.brand == soda_brand
         @cash += soda.price
@@ -29,6 +29,8 @@ class SodaMachine
     end
     nil
   end
+end
+
   #   @sodas.each do |soda|
   #     if soda.brand != soda_brand  
   #       return nil
@@ -41,4 +43,3 @@ class SodaMachine
   #     end
   #   end
   # end
-end
