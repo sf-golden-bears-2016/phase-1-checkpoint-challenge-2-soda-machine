@@ -1,4 +1,5 @@
 require_relative "spec_helper"
+require_relative '../soda_machine.rb'
 
 describe SodaMachine do
   let (:pepsi) { Soda.new(brand: 'Pepsi', price: 0.65) }
