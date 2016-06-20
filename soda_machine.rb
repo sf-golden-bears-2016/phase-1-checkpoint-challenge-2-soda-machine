@@ -23,7 +23,7 @@ class SodaMachine
   end
 
   def sell(soda_brand)
-    # should have used find_soda method to be dry but it didn't like it.
+    # SEBA should have used find_soda method to be dry but it didn't like it.
 
     # cycle through the sodas for a match
     # p @cash.class
@@ -42,6 +42,6 @@ class SodaMachine
 
 end
 
-# why doesn't it recognize these variables with the require relative?
+# SEBA why doesn't it recognize these variables with the require relative?
 # nelson = SodaMachine.new(sodas: [pepsi, mountain_dew, coke_zero,second_pepsi], cash: 1.00)
 
