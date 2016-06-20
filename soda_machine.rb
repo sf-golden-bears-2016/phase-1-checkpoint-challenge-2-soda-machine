@@ -16,7 +16,7 @@ class SodaMachine
         return soda
       end
     end
-    return nil
+    nil
   end
 
   def sell(soda_brand)
