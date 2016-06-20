@@ -26,11 +26,9 @@ class SodaMachine
     #   return nil
     # end
     soda = find_soda(soda_brand)
-    @cash += soda.price
     if soda
+      @cash += soda.price
       @sodas.delete(soda)
-    else
-      nil
     end
 
   end
