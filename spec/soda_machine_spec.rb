@@ -27,6 +27,7 @@ describe SodaMachine do
     end
   end
 
+# SEBA had trouble with dissecting the bug on sell.
   describe "#sell", { sell: true } do
     context "when the soda is not available to be sold" do
       it "returns nil" do
