@@ -6,3 +6,6 @@ class Soda
     @price = args[:price]
   end
 end
+
+# soda = Soda.new(...)
+# p soda.brand
