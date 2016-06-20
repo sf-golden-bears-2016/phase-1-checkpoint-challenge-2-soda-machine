@@ -7,6 +7,9 @@ class SodaMachine
   end
 
   def current_inventory_count
+    count_array = []
+    count_array << @sodas
+    count_array.length
   end
 
   def find_soda(soda_brand)
@@ -16,3 +19,7 @@ class SodaMachine
   end
 
 end
+
+
+machine = SodaMachine.new
+p machine.current_inventory_count
