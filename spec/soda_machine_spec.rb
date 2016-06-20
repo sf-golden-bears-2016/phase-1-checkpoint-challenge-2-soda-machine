@@ -17,6 +17,11 @@ describe SodaMachine do
   describe "#find_soda", { find_soda: true } do
     context "when the soda is in the machine" do
       it "returns the soda the user requested" do
+        # puts "soda_machine[0]:"
+        # p soda_machine[0]
+        # puts pepsi
+        # puts "soda_machine.brand:"
+        # puts soda_machine.brand
         expect(soda_machine.find_soda('Pepsi')).to eq(pepsi)
       end
     end
