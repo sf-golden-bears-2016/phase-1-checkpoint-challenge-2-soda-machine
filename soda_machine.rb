@@ -14,17 +14,16 @@ class SodaMachine
     sodas.each do |soda|
       if soda.brand == soda_brand
         return soda
-      else
-        return nil
       end
     end
+    return nil
   end
 
   def sell(soda_brand)
-    sodas.each do |soda|
-      if soda.brand =! soda_brand
-        return nil
-      end
+    soda = find_soda(soda_brand)
+    if soda
+      @cash += soda.price
+      @sodas.delete(soda)
     end
   end
 
