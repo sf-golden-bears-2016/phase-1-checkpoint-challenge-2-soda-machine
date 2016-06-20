@@ -24,5 +24,4 @@ class SodaMachine
       @sodas.delete_at(@sodas.index(soda))
     end
   end
-
 end
