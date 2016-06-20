@@ -1,4 +1,4 @@
-require_relative "spec_helper"
+srequire_relative "spec_helper"
 
 describe Soda do
   let (:pepsi) { Soda.new(brand: 'Pepsi', price: 0.65, age: 1) }
