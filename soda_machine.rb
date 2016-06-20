@@ -5,29 +5,24 @@ class SodaMachine
   def initialize(args = {})
     @sodas = args[:sodas]
     @cash = args[:cash]
-    @inventory = args.length
   end
 
   def current_inventory_count
-    p sodas
+    @sodas.count
   end
 
   def find_soda(soda_brand)
-     sodas
+     @sodas.each do |soda|
+      p "*" * 10
+      if soda_brand == soda.brand
+        p soda
+        return soda
+      end
+     end
   end
 
   def sell(soda_brand)
 
   end
-
-
-
 end
-
-
-soda_machine = SodaMachine.new(sodas: [$pepsi], cash: 1.00)
-p soda_machine.sodas
-
-
-# pepsi = Soda.new(brand: 'Pepsi', price: 0.65)
 
