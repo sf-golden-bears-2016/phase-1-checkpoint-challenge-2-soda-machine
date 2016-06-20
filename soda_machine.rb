@@ -28,9 +28,9 @@ class SodaMachine
 
   @sodas.each do |soda_instance| 
     if soda_instance.brand == soda_brand
-      soda_instance
+      return soda_instance
     else 
-      nil
+      return nil
     end
   end
   end
