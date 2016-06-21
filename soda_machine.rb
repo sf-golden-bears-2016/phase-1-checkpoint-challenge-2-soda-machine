@@ -33,6 +33,11 @@ class SodaMachine
   end
 
   def sell(soda_brand)
+    soda = find_soda(soda_brand)
+    if find_soda(soda_brand)
+      @cash += soda.price
+      @sodas.delete(soda)
+    end
   end
 
 end
