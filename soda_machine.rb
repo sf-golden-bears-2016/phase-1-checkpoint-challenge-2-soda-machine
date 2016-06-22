@@ -12,13 +12,13 @@ class SodaMachine
 
   def find_soda(soda_brand)
 # When they input a value of a key/value pair as a string, it should return the hash name which is an instance of a class
-
-	until sodas == "soda_brand"
-		if 	sodas == "soda_brand"
-			sodas.index(soda_brand)
+	@sodas.each do |soda|
+		if soda_brand == soda.brand
+			return soda
+		else
+			return nil
 		end
 	end
-
   end
 
   def sell(soda_brand)
@@ -26,5 +26,4 @@ class SodaMachine
   end
 
 end
-
 
