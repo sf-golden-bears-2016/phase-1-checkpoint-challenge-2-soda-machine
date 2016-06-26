@@ -11,11 +11,6 @@ class SodaMachine
 
   def currentl_inventory_count
     @sodas.count
-
-  end
-
-  def find_soda(soda_brand)
-
   end
 
   def find_soda(soda_brand)
