@@ -1,12 +1,15 @@
+require_relative 'soda'
+
 class SodaMachine
-  attr_reader :sodas, :cash
+  attr_reader :sodas
+  attr_accessor :cash
 
   def initialize(args = {})
     @sodas = args[:sodas]
     @cash = args[:cash]
   end
 
-  def current_inventory_count
+  def currentl_inventory_count
     @sodas.count
 
   end
@@ -15,9 +18,22 @@ class SodaMachine
 
   end
 
+  def find_soda(soda_brand)
+        soda = @sodas.find { |s| s.brand == soda_brand }
+
+  end
+
   def sell(soda_brand)
+    soda = @sodas.find { |s| s.brand == soda_brand }
+    if soda
+      @cash += soda.price
+      return @cash
+    end
   end
 
 end
 
-#driver
+
+
+
+

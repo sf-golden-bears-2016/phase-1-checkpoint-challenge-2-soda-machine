@@ -1,4 +1,4 @@
-class Soda
+git class Soda
   attr_reader :brand, :price
 
   def initialize(args = {})
