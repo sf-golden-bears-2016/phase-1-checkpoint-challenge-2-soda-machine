@@ -10,21 +10,20 @@ class SodaMachine
     sodas.count
   end
 
-  def find_soda(soda_brand)
-    sodas.each do |soda|
-      if soda.brand == soda_brand
-        return soda
-      end
-    end
-    return nil
+
+ def find_soda(soda_brand)
+   sodas.find do |soda|
+    soda.brand == soda_brand
   end
+end
+
 
   def sell(soda_brand)
-    soda = find_soda(soda_brand)
-    if soda
-      @cash += soda.price
-      @sodas.delete(soda)
-    end
+   soda = find_soda(soda_brand)
+        if soda
+         @cash += soda.price
+         sodas.delete(soda)
+        end
   end
 
 end
