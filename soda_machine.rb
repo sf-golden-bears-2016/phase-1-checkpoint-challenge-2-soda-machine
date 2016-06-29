@@ -27,14 +27,13 @@ class SodaMachine
   def sell(soda_brand)
     #soda shold should be removed and cash added to soda machines cash
     @sodas.each do |cur_soda|
+      p cur_soda.brand
       if cur_soda.brand == soda_brand
        @cash += cur_soda.price
-       # idx = @sodas.index(cur_soda)
        @sodas.delete(cur_soda)
-      else
-        return nil
       end
     end
+    nil
   end
 
 end
